@@ -13,6 +13,7 @@ License:        MIT
 URL:            https://pypi.python.org/pypi/%{srcname}
 Source0:	https://files.pythonhosted.org/packages/5f/1d/45434f64ed749540af821fd7e42b8e4d23ac04b1eda7c26613288d6cd8a8/click-plugins-1.1.1.tar.gz
 BuildRequires:  python-devel
+BuildRequires:  python-setuptools
 BuildRequires:  python-click >= 4.0
 BuildArch:      noarch
 
