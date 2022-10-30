@@ -3,25 +3,23 @@
 
 Name:           python-%{srcname}
 Version:        1.1.1
-Release:        2
+Release:        3
 Summary:        Click extension to register CLI commands via setuptools
-%global _description \
-An extension module for click to register external CLI commands via setuptools \
-entry-points.
 Group:          Development/Python
 License:        MIT
 URL:            https://pypi.python.org/pypi/%{srcname}
-Source0:	https://files.pythonhosted.org/packages/5f/1d/45434f64ed749540af821fd7e42b8e4d23ac04b1eda7c26613288d6cd8a8/click-plugins-1.1.1.tar.gz
+Source0:	https://files.pythonhosted.org/packages/source/c/click-plugins/click-plugins-%{version}.tar.gz
 BuildRequires:  python-devel
 BuildRequires:  python-setuptools
 BuildRequires:  python-click >= 4.0
 BuildArch:      noarch
 
-%description %{_description}
-
+%description
+An extension module for click to register external CLI commands via setuptools
+entry-points.
 
 %prep
-%autosetup -n %{srcname}-%{version}
+%autosetup -p1 -n %{srcname}-%{version}
 
 %build
 %py_build
@@ -33,4 +31,4 @@ BuildArch:      noarch
 %license LICENSE.txt
 %doc README.rst
 %{python_sitelib}/%{srcname_no_dash}
-%{python_sitelib}/%{srcname_no_dash}-%{version}-py?.?.egg-info
+%{python_sitelib}/%{srcname_no_dash}-%{version}-py*.egg-info
