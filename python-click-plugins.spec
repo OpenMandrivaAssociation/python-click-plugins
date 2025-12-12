@@ -3,7 +3,7 @@
 
 Name:           python-%{srcname}
 Version:        1.1.1
-Release:        4
+Release:        5
 Summary:        Click extension to register CLI commands via setuptools
 Group:          Development/Python
 License:        MIT
