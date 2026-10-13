@@ -3,7 +3,7 @@
 
 Name:		python-click-plugins
 Version:	1.1.1.2
-Release:	1
+Release:	2
 Summary:	Click extension to register CLI commands via setuptools
 Group:		Development/Python
 License:	MIT
@@ -11,7 +11,7 @@ URL:		https://pypi.python.org/pypi/click-plugins
 Source0:	https://files.pythonhosted.org/packages/source/c/%{module}/%{oname}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildSystem:	python
 BuildRequires:	pkgconfig
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
